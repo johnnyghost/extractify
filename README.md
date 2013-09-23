@@ -10,7 +10,7 @@ url.get('host'); // https
 url.getAll(); // {'protocol': 'http', 'host', 'hostname', 'port', 'pathname', 'search'}
 
 url.getParsedQueryParameters(); // {name: 'joao', age: '33'}
-
+```
 
 ## API reference
 
