@@ -5,8 +5,6 @@ It also parse query parameters from the URL into an object.
 
 ### Current url
 ```javascript
-// url: https://github.com/johnnyghost/extractify
-
 var url = new Extractify();
 
 url.getAll(); // {'protocol': 'https', 'host': 'github.com' ... }
@@ -17,9 +15,7 @@ url.get('host'); // https
 
 ### Custom url
 ```javascript
-// url: http://example.com:80?limit=0&offset=10
-
-var url = new Extractify();
+var url = new Extractify('http://example.com:80?limit=0&offset=10');
 
 url.get('hostname'); // example.com
 
