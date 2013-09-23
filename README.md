@@ -3,14 +3,34 @@
 This is a simple wrapper to grab the information from the current URL or a given one.
 It also parse query parameters from the URL into an object.
 
+### Current url
 ```javascript
+
+// https://github.com/johnnyghost/extractify
 var url = new Extractify();
 
-url.get('host'); // https
-url.getAll(); // {'protocol': 'http', 'host', 'hostname', 'port', 'pathname', 'search'}
+url.getAll(); // {'protocol': 'https', 'host': 'github.com, 'hostname': 'github.com', 'port': '', 'pathname': '/johnnyghost/extractify', 'search': ''}
 
-url.getParsedQueryParameters(); // {name: 'joao', age: '33'}
+url.get('host'); // https
+
+
 ```
+
+### Custom url
+```javascript
+
+// http://example.com:80?limit=0&offset=10
+var url = new Extractify();
+
+url.get('hostname'); // example.com
+
+url.getAll(); // {'protocol': 'http', 'host':example.com, 'hostname': 'example.com', 'port': '80', 'pathname': '/johnnyghost/extractify', 'search': '?limit=0&offset=10'}
+
+// Parsed Query Parameters
+url.getParsedQueryParameters(); // {limit:'0', offset: '10'}
+
+```
+
 
 ## API reference
 
