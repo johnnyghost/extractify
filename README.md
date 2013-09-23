@@ -10,11 +10,7 @@ url.get('host'); // https
 url.getAll(); // {'protocol': 'http', 'host', 'hostname', 'port', 'pathname', 'search'}
 
 url.getParsedQueryParameters(); // {name: 'joao', age: '33'}
-<<<<<<< HEAD
-``
-=======
-```
->>>>>>> 5d9072a943c2da07681b6502bd14ff2b3df0b2b8
+
 
 ## API reference
 
@@ -30,8 +26,5 @@ If no parameter is passed then the current URL will be parsed,
 else it parse an string of query parameters.
 
 ## License
-<<<<<<< HEAD
-Miuri is released under a MIT License.
-=======
-Miuri is released under a MIT License.
->>>>>>> 5d9072a943c2da07681b6502bd14ff2b3df0b2b8
+
+Extractify is released under a MIT License.
