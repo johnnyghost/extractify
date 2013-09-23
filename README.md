@@ -10,8 +10,7 @@ It also parse query parameters from the URL into an object.
 
 var url = new Extractify();
 
-url.getAll(); // {'protocol': 'https', 'host': 'github.com, 'hostname': 'github.com',
-				'port': '', 'pathname': '/johnnyghost/extractify', 'search': ''}
+url.getAll(); // {'protocol': 'https', 'host': 'github.com' ... }
 
 url.get('host'); // https
 
@@ -26,8 +25,7 @@ var url = new Extractify();
 
 url.get('hostname'); // example.com
 
-url.getAll(); // {'protocol': 'http', 'host':example.com, 'hostname': 'example.com',
-				'port': '80', 'pathname': '/johnnyghost/extractify', 'search': '?limit=0&offset=10'}
+url.getAll(); // {'protocol': 'http', 'host': 'example.com',... }
 
 // Parsed Query Parameters
 url.getParsedQueryParameters(); // {limit:'0', offset: '10'}
