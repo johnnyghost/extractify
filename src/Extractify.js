@@ -71,7 +71,7 @@
     Extractify.prototype.getParsedQueryParameters = function (sparameters) {
 
         var queryParameters = {},
-            parameters = (sparameters || location.search.substring(1)).split('&'),
+            parameters = (sparameters || this.url.search.substring(1)).split('&'),
             parametersLen = parameters.length,
             i = 0;
 
