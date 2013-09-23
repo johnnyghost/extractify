@@ -21,7 +21,7 @@ url.get('hostname'); // example.com
 
 url.getAll(); // {'protocol': 'http', 'host': 'example.com',... }
 
-// Parsed Query Parameters
+// Parse Query Parameters
 url.getParsedQueryParameters(); // {limit:'0', offset: '10'}
 
 ```
