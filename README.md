@@ -6,25 +6,28 @@ It also parse query parameters from the URL into an object.
 ### Current url
 ```javascript
 
-// https://github.com/johnnyghost/extractify
+// url: https://github.com/johnnyghost/extractify
+
 var url = new Extractify();
 
-url.getAll(); // {'protocol': 'https', 'host': 'github.com, 'hostname': 'github.com', 'port': '', 'pathname': '/johnnyghost/extractify', 'search': ''}
+url.getAll(); // {'protocol': 'https', 'host': 'github.com, 'hostname': 'github.com',
+				'port': '', 'pathname': '/johnnyghost/extractify', 'search': ''}
 
 url.get('host'); // https
-
 
 ```
 
 ### Custom url
 ```javascript
 
-// http://example.com:80?limit=0&offset=10
+// url: http://example.com:80?limit=0&offset=10
+
 var url = new Extractify();
 
 url.get('hostname'); // example.com
 
-url.getAll(); // {'protocol': 'http', 'host':example.com, 'hostname': 'example.com', 'port': '80', 'pathname': '/johnnyghost/extractify', 'search': '?limit=0&offset=10'}
+url.getAll(); // {'protocol': 'http', 'host':example.com, 'hostname': 'example.com',
+				'port': '80', 'pathname': '/johnnyghost/extractify', 'search': '?limit=0&offset=10'}
 
 // Parsed Query Parameters
 url.getParsedQueryParameters(); // {limit:'0', offset: '10'}
