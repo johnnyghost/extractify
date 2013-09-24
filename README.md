@@ -8,11 +8,11 @@ It also parse query parameters from the URL into an object.
 
 // url: https://github.com/johnnyghost/extractify
 
-var url = new Extractify();
+var parsedUrl = new Extractify();
 
-url.getAll(); // {'protocol': 'https', 'host': 'github.com' ... }
+parsedUrl.getAll(); // {'protocol': 'https', 'host': 'github.com' ... }
 
-url.get('host'); // https
+parsedUrl.get('host'); // https
 
 ```
 
@@ -21,14 +21,14 @@ url.get('host'); // https
 
 // url: http://example.com:80?limit=0&offset=10
 
-var url = new Extractify();
+var parsedUrl = new Extractify();
 
-url.get('hostname'); // example.com
+parsedUrl.get('hostname'); // example.com
 
-url.getAll(); // {'protocol': 'http', 'host': 'example.com',... }
+parsedUrl.getAll(); // {'protocol': 'http', 'host': 'example.com',... }
 
 // Parsed Query Parameters
-url.getParsedQueryParameters(); // {limit:'0', offset: '10'}
+parsedUrl.getParsedQueryParameters(); // {limit:'0', offset: '10'}
 
 ```
 
