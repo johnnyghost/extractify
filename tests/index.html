@@ -3,13 +3,20 @@
 	<head>
 		<title>Extractify tests</title>
 		<meta charset='utf-8'>
+		<link rel="stylesheet" href="../node_modules/mocha/mocha.css">
 	</head>
 
 	<body>
+		<div id="mocha"></div>
+		<script type='text/javascript' src='../node_modules/mocha/mocha.js'></script>
+		<script type='text/javascript' src='../node_modules/chai/chai.js'></script>
 		<script type='text/javascript' src='../src/Extractify.js'></script>
-
-		<script type="text/javascript">
-
-		</script>
+		<script>mocha.setup('bdd')</script>
+		<script type='text/javascript' src='./tests.js'></script>
+		<script>
+	    (function() {
+	      mocha.run();
+	    })()
+	  </script>
 	</body>
 </html>
