@@ -1,0 +1,39 @@
+{
+	"name": "extractify-js",
+	"version": "0.1.0",
+	"description": "Simple wrapper to parse the url",
+	"main": "./src/Extractify.js",
+
+	"directories": {
+		"doc": "docs",
+		"test": "tests"
+	},
+
+	"repository": {
+		"type": "git",
+		"url": "git://github.com:johnnyghost/extractify.git"
+	},
+	"keywords": [
+		"url",
+		"query parameters"
+	],
+	"author": {
+		"name": "Joao Henriques",
+		"email": "joao@iknowaghost.com",
+		"url": "www.iknowaghost.com"
+	},
+
+	"license": "MIT",
+	"readmeFilename": "README.md",
+
+	"bugs": {
+		"url": "https://github.com/johnnyghost/extractify/issues"
+	},
+
+	"devDependencies": {
+		"uglify-js": "*",
+		"mocha": "*",
+		"chai": "*",
+		"dox": "*"
+	}
+}

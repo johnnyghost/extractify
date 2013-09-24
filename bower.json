@@ -1,0 +1,21 @@
+{
+	"name": "extractify",
+	"description": "Simple wrapper to parse the url",
+	"version": "0.1.0",
+	"main": [
+		"./src/Extractify.js"
+	],
+	"author": {
+		"name": "Joao Henriques",
+		"web": "http://iknowaghost.com"
+	},
+	"licenses": [
+		{
+			"type": "MIT"
+		}
+	],
+	"keywords": [
+		"url",
+		"query parameters"
+	]
+}
