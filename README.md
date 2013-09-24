@@ -5,13 +5,11 @@ It also parse query parameters from the URL into an object.
 
 ### Current url
 ```javascript
-
 // url: https://github.com/johnnyghost/extractify
 
 var parsedUrl = new Extractify();
 
 parsedUrl.getAll(); // {'protocol': 'https', 'host': 'github.com' ... }
-
 parsedUrl.get('host'); // https
 
 ```
@@ -24,7 +22,6 @@ parsedUrl.get('host'); // https
 var parsedUrl = new Extractify();
 
 parsedUrl.get('hostname'); // example.com
-
 parsedUrl.getAll(); // {'protocol': 'http', 'host': 'example.com',... }
 
 // Parsed Query Parameters
