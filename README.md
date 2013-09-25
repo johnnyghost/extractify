@@ -40,8 +40,8 @@ Get an expecific property of the url.
 
 ### getParsedQueryParameters([sparameters])
 Get an object with parsed query parameters.
-If no parameter is passed then the current URL will be parsed,
-else it parse an string of query parameters.
+If no parameter is passed then the query parameter string is relative to the current URL,
+else it parses an given string of query parameters.
 
 ## License
 
